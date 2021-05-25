@@ -1,0 +1,1373 @@
+/*------------------------------------ OVERLAY/ENTER ----------------------------------------*/
+
+/* .overlayfull {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.enter {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.enterBtn {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  border-radius: 4rem;
+  outline: none;
+  border-style: none;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  cursor: pointer;
+  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #ffffff, 0 0 85px #ffffff;
+}
+
+@media only screen and (max-width: 460px) {
+  .enterBtn {
+    width: 100%;
+    height: 50px;
+     font-size: 3vw;
+  }
+} */
+
+
+
+/*------------------ BODY, CONTAINER, CONTENT, LEFT MARGIN, RIGHT MARGIN, NAVBAR AND HEADER ------------------*/
+
+@font-face {
+  font-family: typewriter;
+  src: url(fonts/atwriter.ttf);
+}
+
+@font-face {
+  font-family: pencil;
+  src: url(fonts/Thin\ Pencil\ Handwriting.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url(images/backgroundimg3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 6px 0px 6px rgb(189, 189, 189);
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    padding-left: 3%;
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    box-shadow: 4px 0px 8px rgb(177, 177, 177);
+  }
+}
+
+.content {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.enigmaHeader {
+  width: 100%;
+  height: auto;
+}
+
+.leftSide {
+  background-image: url(images/ringbinder2.png);
+  background-repeat: repeat;
+  background-size: contain;
+  width: 6%;
+  z-index: 10;
+}
+
+.rightSide {
+  width: 2%;
+  z-index: 5;
+  background-color: white;
+}
+
+.border {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgb(141, 141, 141);
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1020px) {
+  .navbar {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .navbar {
+    height: 2rem;
+  }
+}
+
+.name,
+.paintings,
+.andmore {
+  color: rgb(22, 55, 116);
+  font-family: "Times";
+  font-size: clamp(1rem, 3vw, 2rem);
+  display: flex;
+  background-color: transparent;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 800px) {
+  .name,
+  .paintings,
+  .andmore {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .name,
+  .paintings {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .andmore {
+    display: none;
+  }
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  color: rgb(13, 48, 82);
+  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@media only screen and (max-width: 1020px) {
+  .today {
+    display: none;
+  }
+}
+
+.CurrentDate,
+.currentTime {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/*----------------------------------------------- INTRO -------------------------------------------------*/
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px;
+  height: auto;
+  margin-top: 4%;
+}
+
+@media only screen and (max-width: 850px) {
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.definition {
+  width: 45%;
+  height: 100%;
+  padding: 3%;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(14, 44, 90);
+}
+
+@media only screen and (max-width: 850px) {
+  .definition {
+    width: 90%;
+  }
+}
+
+.disco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .disco {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .disco {
+    margin-top: 0%;
+  }
+}
+
+.discoball {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.downarrow {
+  width: 100%;
+  height: auto;
+}
+
+.pijl {
+  width: 6%;
+  height: auto;
+}
+
+.random {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(150, 150, 150);
+  font-size: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
+  margin-top: 4%; /* 4% of the width! of the box */
+}
+
+/*------------------------------------- MIRRORBALL WITH QOUTE ----------------------------------------*/
+
+.mirrorball {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/wallpaper4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  box-shadow: inset 2px 2px 4px rgb(187, 187, 187),
+    inset -2px -2px 4px rgb(187, 187, 187);
+  margin-top: 4%;
+}
+
+@media only screen and (max-width: 900px) {
+  .mirrorball {
+    box-shadow: inset 1px 1px 4px rgb(187, 187, 187),
+      inset -1px -1px 4px rgb(187, 187, 187);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mirrorball {
+    box-shadow: inset 1px 1px 2px rgb(187, 187, 187),
+      inset -1px -1px 2px rgb(187, 187, 187);
+  }
+}
+
+.discopara {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+.quotes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(129, 129, 129);
+  font-family: typewriter;
+  margin-bottom: 3%;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quotename {
+  text-decoration: underline;
+  font-weight: 700;
+  color: rgb(88, 88, 88);
+}
+
+.discoballpara {
+  width: 5%;
+  height: auto;
+}
+
+.camus {
+  color: rgb(129, 129, 129);
+}
+
+.camusname {
+  color: rgb(109, 109, 109);
+}
+
+/*----------------------------------- FILMSTRIP QUESTION EVERYTHING -------------------------------------*/
+
+.filmStrip {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.stripbg {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------- PAINTINGS IMAGES LARGE ----------------------------------------*/
+
+/* img-1 = ufo */
+.img-1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.img-2 {
+  padding-top: 1%;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* img-4 found in opinio.css file */
+
+.img-3,
+.img-5,
+.img-6,
+.img-8,
+.img-9,
+.img-10,
+.img-11,
+.img-12 {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.ufo,
+.enigma1,
+.disco1,
+.taxonomy1,
+.hotel1,
+.mindthegap1,
+.panorama1,
+.overview1,
+.mindthegap2 {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 2px rgb(126, 126, 126);
+}
+
+@media only screen and (max-width: 580px) {
+  .ufo,
+  .enigma1,
+  .disco1,
+  .taxonomy1,
+  .hotel1,
+  .mindthegap1 {
+    box-shadow: 0px 1px 2px rgb(126, 126, 126);
+  }
+}
+
+.mtg {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.mtgblack {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.img-7 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  height: auto;
+  position: relative;
+}
+
+.vermeer1 {
+  width: 100%;
+  height: auto;
+}
+
+.hotelvermeer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vermeer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 54%;
+  height: auto;
+  padding-top: 1%;
+}
+
+.jv, .curtain {
+  font-size: calc(8px + (24 - 8) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(99, 99, 99);
+}
+
+.allegory, .stage1 {
+  font-size: calc(6px + (16 - 6) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(99, 99, 99);
+}
+
+.hotelcurtain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 43%;
+  height: auto;
+  padding-top: 1%;
+  font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(129, 129, 129);
+}
+
+/*---------------------------------------- PAINTINGS OVERLAY ----------------------------------------*/
+
+.overlay {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.7);
+  place-items: center;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  transform: scale(0);
+}
+
+.show {
+  visibility: visible;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.info {
+  position: absolute;
+  width: 3%;
+  height: auto;
+  z-index: 10;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-info-circle {
+  font-size: calc(12px + (34 - 12) * ((100vw - 320px) / (1920 - 320)));
+  color: white;
+  animation: bounce 2s ease-in-out infinite;
+  padding: 1px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(117, 0, 0);
+  border: 7px solid rgb(255, 255, 255);
+  width: 60%;
+  height: 55%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 24px rgb(122, 122, 122);
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .text {
+    width: 90%;
+    height: 80%;
+  }
+}
+
+.textOut {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(117, 0, 0);
+  border: 7px solid rgb(255, 255, 255);
+  width: 60%;
+  height: 55%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px rgb(133, 133, 133);
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .text {
+    box-shadow: 0px 0px 8px rgb(121, 121, 121);
+    border: 4px solid rgb(255, 255, 255);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .text {
+    box-shadow: 0px 0px 6px rgb(121, 121, 121);
+  }
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid darkred;
+  padding-bottom: 2%;
+  width: 80%;
+  font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320)));
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.mtgblack {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.thepresent {
+  border-bottom: 1px solid darkred;
+  width: 80%;
+  text-align: center;
+}
+
+.fullywritten {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  width: 80%;
+  font-style: italic;
+  border-bottom: 1px solid darkred;
+  font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.fullywritten_panorama {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  width: 80%;
+  font-style: italic;
+  border-bottom: 1px solid darkred;
+  font-size: calc(8px + (17 - 8) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.fullywritten_disco {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  width: 80%;
+  font-style: italic;
+  border-bottom: 1px solid darkred;
+  font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.analogy {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border-bottom: 1px solid darkred;
+  font-style: italic;
+  font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.patchwork, .overview, .mindthegapoker {
+  border-bottom: 1px solid darkred;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.namePainting {
+  display: none;
+}
+
+.thepresent {
+  padding-bottom: 2%;
+}
+
+.size {
+  padding-top: 2%;
+}
+
+.title {
+  font-size: calc(12px + (34 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*---------------------------------- PAINTINGS/THUMBS --------------------------------------*/
+
+.gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  padding-top: 3%;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  border-top: 1px solid rgb(160, 160, 160);
+}
+
+.gallery_mtg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  padding-top: 3%;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  border-top: 1px solid rgb(160, 160, 160);
+}
+
+.thumb {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.thumb .detail {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 2px rgb(92, 92, 92);
+  transition: box-shadow 0.5s;
+}
+
+.thumb .detail:hover {
+  box-shadow: 0px 0px 12px rgb(63, 63, 63);
+}
+
+@media only screen and (max-width: 800px) {
+ .thumb .detail:hover {
+    
+    box-shadow: 0px 0px 7px rgb(92, 92, 92);
+  }
+}
+
+.pic {
+  margin-right: 2%;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  color: rgb(133, 133, 133);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
+}
+
+/*-------------------------------------- CAMUS VIDEO and INTRO  ----------------------------------------*/
+
+.camusintro {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: arial;
+  font-size: calc(9px + (14 - 6) * ((100vw - 320px) / (1920 - 320)));
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.camusoutro {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 2%;
+}
+
+.wrapper {
+  background-image: url(images/stripbg2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 6%;
+  box-shadow: 0px 2px 4px gray;
+}
+
+.vidwrapper {
+  width: 60%;
+}
+
+.videocontainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  width: 100%;
+}
+
+.videocontainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+}
+
+/* ------------------------------------- about mind the gap ---------------------------------------- */
+
+.aboutMtg {
+  position: relative;
+  padding-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: rgb(41, 41, 41);
+}
+
+.mtgHead {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background: rgb(41, 41, 41);
+  color: white;
+}
+
+.mtgText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height:auto;
+  background: rgb(41, 41, 41);
+  color: white;
+  padding-top: 3%;
+  }
+
+.mtgTitle {
+  padding-top: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+  color: white;
+  }
+
+.icon {
+    width: 1rem;
+    height: auto;
+  }
+
+.rotate{
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.rotate.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.textBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: lighter;
+  color: white;
+  animation: fadeIn ease 5s;
+}
+
+.textBox2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: lighter;
+  color: white;
+  animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+ .textBox {
+    font-size: calc(11px + (20 - 11) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.nvd {
+  margin-top: 4%;
+  width: 100%;
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: lighter;
+  color: white;
+}
+
+ .fa-angle-double-down {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+   padding-top: 3%;
+}
+
+.arrowDown {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+    height: 1rem;
+    transition:             height 1000ms ease;
+        -moz-transition:    height 1000ms ease;
+        -ms-transition:     height 1000ms ease;
+        -o-transition:      height 1000ms ease;
+        -webkit-transition: height 1000ms ease;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.dutchflag {
+  display: flex;
+}
+
+.englishflag {
+  display: flex;
+}
+
+
+/* ------------------------------------- under construction -----------------------------------------*/
+.uc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  color: rgb(65, 65, 65);
+  font-size: calc(9px + (26 - 6) * ((100vw - 320px) / (1920 - 320)));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  border: 0.15em dotted rgb(124, 124, 124);
+}
+
+.ffry1,
+.ffry2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(0, 0, 0, 0.7); */
+  width: 100%;
+  text-shadow: 0px 0px 10px white, 0px 0px 10px white;
+}
+
+.ffry1 {
+  padding-top: 1%;
+}
+
+.ffry2 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*----------------------------------------- Duchamp -------------------------------------------*/
+
+.duchamp {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+@media only screen and (max-width: 930px) {
+  .duchamp {
+    flex-direction: column;
+  }
+}
+
+.marcelduchamp {
+  width: 60%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5%;
+  background: #43453a;
+  padding: 2%;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 930px) {
+ .marcelduchamp {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    background:white;
+    color: black;
+    border-radius: 0%;
+  }
+}
+
+.marcel {
+   font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (1920 - 320)));
+   font-weight: bold;
+}
+
+.duchampTitle {
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-style: italic;
+}
+
+.duchampText {
+   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+   margin-top: 2%;
+   color: white;
+}
+
+.duchampText a {
+  color: rgb(185, 31, 31);
+}
+
+@media only screen and (max-width: 930px) {
+  .duchampText {
+   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+   color: black;
+    margin-top: 2%;
+  }
+}
+
+ @media only screen and (max-width: 930px) {
+  .duchampText a{
+     color: black;
+  }
+}
+
+.urinal {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: auto;
+}
+
+.fountain2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  transition: opacity ease-in-out 2s;
+}
+
+.duchampportrait {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.urinal:hover .fountain2 {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 930px) {
+  .urinal {
+    display: none;
+  }
+}
+
+.urinalduo {
+   display: none;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   height: auto;
+}
+
+@media only screen and (max-width: 930px) {
+  .urinalduo {
+    display: flex;
+    margin-top: 3%;
+  }
+}
+
+.fountainimg {
+  width: 47%;
+  height: auto;
+}
+.fountainduo {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/*----------------------------------------- Magritte -------------------------------------------*/
+
+.magritte {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  color: rgb(53, 53, 53);
+}
+
+@media only screen and (max-width: 930px) {
+  .magritte {
+    flex-direction: column;
+  }
+}
+
+.renemagritte {
+  width: 60%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5%;
+  background: #f1e2b9;
+  padding: 2%;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 930px) {
+ .renemagritte {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    background:white;
+    color: black;
+    border-radius: 0%;
+  }
+}
+
+.rene {
+   font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (1920 - 320)));
+   font-weight: bold;
+   color: rgb(95, 63, 27);
+}
+
+.magritteTitle {
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-style: italic;
+   color: rgb(95, 63, 27);
+}
+
+.magritteText {
+   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+   margin-top: 2%;
+   color: rgb(95, 63, 27);
+}
+
+.magritte a {
+  color: rgb(185, 31, 31);
+}
+
+@media only screen and (max-width: 930px) {
+  .magritteText {
+   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+   color: rgb(95, 63, 27);
+   margin-top: 2%;
+   margin-bottom: 2%;
+  }
+}
+
+ @media only screen and (max-width: 930px) {
+  .duchampText a{
+     color: black;
+  }
+}
+
+.pipe {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: auto;
+}
+
+.magrittepipe {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.magrittepipe2 {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 930px) {
+  .pipe {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .magrittepipe {
+     display: none;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .magrittepipe2 {
+     display: flex;
+  }
+}
+
+/* ------------------------------------- Ripped paper -----------------------------------------*/
+.rippedPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  top: 70px;
+  height: auto;
+  filter: drop-shadow(0.1rem 0.4rem 0.2rem rgb(179, 178, 178));
+  position: relative;
+  padding-right: 2%;
+  margin-top: 5%;
+  transform: rotate(-3deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .rippedPaper {
+   filter: drop-shadow(0.1rem 0.2rem 0.1rem rgb(184, 184, 184));
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .rippedPaper {
+   filter: drop-shadow(0.1rem 0.2rem 0.1rem rgb(185, 185, 185));
+  }
+}
+
+@media only screen and (max-width: 1539px) {
+  .rippedPaper {
+   top: 0px;
+  }
+}
+
+.ripped {
+  width: 100%;
+  height: auto;
+}
+
+.noud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: pencil;
+  font-size: calc(10px + (28 - 10) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: bold;
+  color: rgb(177, 177, 177);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.namePainting {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+  background-color: white;
+  padding: .5em;
+  opacity: 0;
+  transition: opacity ease-in-out .5s;
+}

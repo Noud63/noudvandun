@@ -1,0 +1,137 @@
+/* img-4 = opinio responsive text and image*/
+.img-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .img-4 {
+    flex-direction: column;
+  }
+}
+
+.opinio {
+  width: 40%;
+}
+
+@media only screen and (max-width: 500px) {
+  .opinio {
+    width: 80%;
+    margin-top: 5%;
+     margin-bottom: 5%;
+  }
+}
+
+.opinioimg {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.textopinio {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 500px) {
+  .textopinio {
+    width: 80%;
+  }
+}
+
+.opinioheader {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+
+.opiniotitle {
+  display: flex;
+  width: 95%;
+  height: auto;
+  font-size: calc(10px + (32 - 10) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+  .opiniotitle {
+    width: 100%;
+  }
+}
+
+.etching {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+  font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(112, 112, 112);
+}
+
+.explained {
+  display: flex;
+  font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1920 - 320)));
+  display: flex;
+  justify-content: center;
+  color: rgb(112, 112, 112);
+}
+.xl {
+   font-size: calc(5px + (18 - 5) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.explained1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: calc(9px + (20 - 9) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.number {
+  font-weight: normal;
+}
+
+.wordboxes {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wordbox {
+  height: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+  .wordbox {
+    width: 100%;
+    padding: 2% 0 2% 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wordboxes {
+    width: 100%;
+  }
+}
