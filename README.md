@@ -5,4 +5,4 @@ My personal website is all about art and more......<br>
 
 ![iphoneXmockup](https://user-images.githubusercontent.com/38325801/119522120-03116c80-bd7c-11eb-9dd3-3df0d4a76011.png)<br><br>
 
-![noudvandun3](https://user-images.githubusercontent.com/38325801/119515986-a2336580-bd76-11eb-819d-c14c584110b8.png)
+
