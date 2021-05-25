@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  background-image: url(images/backgroundimg3.jpg);
+  background-image: url('../images/backgroundimg3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -117,7 +117,7 @@ body {
 }
 
 .leftSide {
-  background-image: url(images/ringbinder2.png);
+  background-image: url('../images/ringbinder2.png');
   background-repeat: repeat;
   background-size: contain;
   width: 6%;
@@ -320,7 +320,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(images/wallpaper4.jpg);
+  background-image: url('../images/wallpaper4.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
