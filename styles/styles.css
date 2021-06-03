@@ -52,12 +52,12 @@
 
 @font-face {
   font-family: typewriter;
-  src: url(fonts/atwriter.ttf);
+  src: url(../fonts/atwriter.ttf);
 }
 
 @font-face {
   font-family: pencil;
-  src: url(fonts/Thin\ Pencil\ Handwriting.ttf);
+  src: url(../fonts/pencil.ttf);
 }
 
 * {
@@ -244,7 +244,8 @@ body {
   width: 45%;
   height: 100%;
   padding: 3%;
-  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(14, 44, 90);
 }
 
@@ -263,6 +264,33 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 2%;
+}
+
+.paintingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding:50px 50px;
+  color: rgb(150, 150, 150);
+  font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (1920 - 320)));
+  margin-top: 5%;
+  box-shadow: 0px 2px 6px rgb(172, 172, 172);
+  z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .paintingsTitle {
+   padding:20px 20px;
+   box-shadow: 0px 2px 5px rgb(172, 172, 172);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .paintingsTitle {
+   padding:10px 10px;
+   box-shadow: 0px 1px 4px rgb(172, 172, 172);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -308,8 +336,8 @@ body {
   justify-content: space-around;
   width: 100%;
   height: auto;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: rgb(150, 150, 150);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(128, 128, 128);
   font-size: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
   margin-top: 4%; /* 4% of the width! of the box */
 }
@@ -424,7 +452,6 @@ body {
 /* img-4 found in opinio.css file */
 
 .img-3,
-.img-5,
 .img-6,
 .img-8,
 .img-9,
@@ -432,6 +459,13 @@ body {
 .img-11,
 .img-12 {
   margin-top: 5%;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.img-5 {
+  margin-top: 2%;
   width: 100%;
   height: auto;
   position: relative;
@@ -492,37 +526,39 @@ body {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: rgb(22, 22, 22);
+  padding: 30px 30px;
 }
 
 .vermeer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 54%;
+  line-height: 1.4;
+  width: 50%;
   height: auto;
-  padding-top: 1%;
 }
 
 .jv, .curtain {
-  font-size: calc(8px + (24 - 8) * ((100vw - 320px) / (1920 - 320)));
-  color: rgb(99, 99, 99);
+  font-size: calc(8px + (22 - 8) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(187, 123, 40);
 }
 
 .allegory, .stage1 {
-  font-size: calc(6px + (16 - 6) * ((100vw - 320px) / (1920 - 320)));
-  color: rgb(99, 99, 99);
+  font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(231, 231, 231);
 }
 
 .hotelcurtain {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 43%;
+  line-height: 1.4;
+  width: 50%;
   height: auto;
-  padding-top: 1%;
   font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(129, 129, 129);
 }
@@ -587,12 +623,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(117, 0, 0);
+  color: rgb(128, 128, 128);
   border: 7px solid rgb(255, 255, 255);
   width: 60%;
   height: 55%;
   border-radius: 20px;
-  box-shadow: 0px 0px 24px rgb(122, 122, 122);
+  box-shadow: 0px 0px 24px rgb(100, 100, 100);
   background-color: rgb(240, 240, 240);
   padding-bottom: 2%;
   cursor: pointer;
@@ -611,12 +647,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(117, 0, 0);
+  color: rgb(100, 100, 100);
   border: 7px solid rgb(255, 255, 255);
   width: 60%;
   height: 55%;
   border-radius: 20px;
-  box-shadow: 0px 0px 14px rgb(133, 133, 133);
+   box-shadow: 0px 0px 24px rgb(100, 100, 100);
   background-color: rgb(240, 240, 240);
   padding-bottom: 2%;
   cursor: pointer;
@@ -640,7 +676,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   padding-bottom: 2%;
   width: 80%;
   font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320)));
@@ -664,7 +700,7 @@ body {
   padding-top: 1%;
   width: 80%;
   font-style: italic;
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -674,7 +710,7 @@ body {
   padding-top: 1%;
   width: 80%;
   font-style: italic;
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   font-size: calc(8px + (17 - 8) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -684,7 +720,7 @@ body {
   padding-top: 1%;
   width: 80%;
   font-style: italic;
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -694,13 +730,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2%;
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   font-style: italic;
   font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .patchwork, .overview, .mindthegapoker {
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid rgb(100, 100, 100);
   width: 80%;
   display: flex;
   align-items: center;
@@ -723,6 +759,7 @@ body {
 .title {
   font-size: calc(12px + (34 - 12) * ((100vw - 320px) / (1920 - 320)));
   font-family: 'Times New Roman', Times, serif;
+  color: rgb(70, 70, 70);
 }
 
 /*---------------------------------- PAINTINGS/THUMBS --------------------------------------*/
@@ -1301,6 +1338,44 @@ p {
   .magrittepipe2 {
      display: flex;
   }
+}
+
+/* ------------------------------------- Dead Christ ------------------------------------------*/
+.holbeinWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+  margin-top: 2%;
+}
+
+.deadChrist {
+  width: 100%;
+  height: auto;
+}
+
+.christ {
+  width: 100%;
+  height: auto;
+}
+
+.holbeinTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height:auto;
+  line-height: 1.4;
+  padding: 50px 50px;
+  background-color: black;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(212, 188, 159);
+}
+
+.holbeinName {
+  font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
 
 /* ------------------------------------- Ripped paper -----------------------------------------*/
