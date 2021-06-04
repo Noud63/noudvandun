@@ -512,8 +512,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 4%;
+  width: 100%;
   height: auto;
-  position: relative;
 }
 
 .vermeer1 {
@@ -526,12 +526,10 @@ body {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   background-color: rgb(22, 22, 22);
-  padding: 30px 30px;
 }
 
-.vermeer {
+.vermeer, .hotelcurtain {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -539,6 +537,7 @@ body {
   line-height: 1.4;
   width: 50%;
   height: auto;
+  padding: 3% 3%;
 }
 
 .jv, .curtain {
@@ -549,18 +548,6 @@ body {
 .allegory, .stage1 {
   font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(231, 231, 231);
-}
-
-.hotelcurtain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  line-height: 1.4;
-  width: 50%;
-  height: auto;
-  font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1920 - 320)));
-  color: rgb(129, 129, 129);
 }
 
 /*---------------------------------------- PAINTINGS OVERLAY ----------------------------------------*/
@@ -1368,14 +1355,20 @@ p {
   width: 100%;
   height:auto;
   line-height: 1.4;
-  padding: 50px 50px;
+  padding: 4% 4%;
   background-color: black;
   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(212, 188, 159);
 }
 
 .holbeinName {
-  font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(12px + (36 - 12) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(177, 123, 57);
+}
+
+.holbeinName2 {
+  font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(146, 99, 43);
 }
 
 /* ------------------------------------- Ripped paper -----------------------------------------*/

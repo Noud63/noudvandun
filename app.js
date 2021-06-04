@@ -31,7 +31,7 @@ infoBtns.forEach((btn) => {
 
 //Click anywhere to close overlay with textbox
 overlays.forEach(overlay => {
-  overlay.addEventListener("click", () => {
+  overlay.addEventListener("click", (event) => {
     if (event.target.classList.contains("del")) {
       for (let btn of infoBtns) {
         overlay.classList.remove("show")
