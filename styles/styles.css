@@ -266,33 +266,6 @@ body {
   margin-top: 2%;
 }
 
-.paintingsTitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
-  padding:50px 50px;
-  color: rgb(150, 150, 150);
-  font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (1920 - 320)));
-  margin-top: 5%;
-  box-shadow: 0px 2px 6px rgb(172, 172, 172);
-  z-index: 1;
-}
-
-@media only screen and (max-width: 800px) {
-  .paintingsTitle {
-   padding:20px 20px;
-   box-shadow: 0px 2px 5px rgb(172, 172, 172);
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .paintingsTitle {
-   padding:10px 10px;
-   box-shadow: 0px 1px 4px rgb(172, 172, 172);
-  }
-}
-
 @media only screen and (max-width: 1000px) {
   .disco {
     margin-top: 3%;
@@ -340,6 +313,33 @@ body {
   color: rgb(128, 128, 128);
   font-size: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
   margin-top: 4%; /* 4% of the width! of the box */
+}
+
+/*-------------------------------------- Paintings Title Bar ------------------------------------------*/
+
+.paintingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding:4% 4% ;
+  color: rgb(150, 150, 150);
+  font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (1920 - 320)));
+  margin-top: 5%;
+  box-shadow: 0px 2px 6px rgb(172, 172, 172);
+  z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .paintingsTitle {
+   box-shadow: 0px 2px 5px rgb(172, 172, 172);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .paintingsTitle {
+   box-shadow: 0px 1px 4px rgb(172, 172, 172);
+  }
 }
 
 /*------------------------------------- MIRRORBALL WITH QOUTE ----------------------------------------*/
@@ -611,7 +611,7 @@ body {
   justify-content: center;
   flex-direction: column;
   color: rgb(128, 128, 128);
-  border: 7px solid rgb(255, 255, 255);
+  border: 4px solid rgb(255, 255, 255);
   width: 60%;
   height: 55%;
   border-radius: 20px;
@@ -746,7 +746,7 @@ body {
 .title {
   font-size: calc(12px + (34 - 12) * ((100vw - 320px) / (1920 - 320)));
   font-family: 'Times New Roman', Times, serif;
-  color: rgb(70, 70, 70);
+  color: rgb(131, 131, 131);
 }
 
 /*---------------------------------- PAINTINGS/THUMBS --------------------------------------*/
@@ -1334,7 +1334,7 @@ p {
   display: flex;
   flex-direction: column;
   font-size: 0;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .deadChrist {
