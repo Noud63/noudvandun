@@ -13,7 +13,6 @@
   align-items: center;
   flex-direction: column;
 }
-
 .enter {
   width: 40%;
   height: auto;
@@ -22,7 +21,6 @@
   align-items: center;
   color: white;
 }
-
 .enterBtn {
   width: 100%;
   height: auto;
@@ -37,7 +35,6 @@
   cursor: pointer;
   box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #ffffff, 0 0 85px #ffffff;
 }
-
 @media only screen and (max-width: 460px) {
   .enterBtn {
     width: 100%;
@@ -619,6 +616,7 @@ body {
   background-color: rgb(240, 240, 240);
   padding-bottom: 2%;
   cursor: pointer;
+  background-image: linear-gradient(to top, rgb(228, 228, 228), white);
 }
 
 @media only screen and (max-width: 900px) {
@@ -672,7 +670,7 @@ body {
 }
 
 .mtgblack {
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(100, 100, 100);
 }
 
 .thepresent {
