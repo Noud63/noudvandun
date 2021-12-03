@@ -238,15 +238,6 @@ body {
 
 }
 
-@media only screen and (max-width: 850px) {
-  .intro, .intro2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
 .definition {
   width: 50%;
   height: 100%;
@@ -258,6 +249,15 @@ body {
 @media only screen and (max-width: 850px) {
   .definition {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .intro, .intro2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -280,6 +280,7 @@ body {
     border: none;
   }
 }
+
 .disco {
   display: flex;
   align-items: center;
@@ -1025,12 +1026,12 @@ p {
   text-align: center;
   width: 100%;
   overflow: hidden;
-    height: 1rem;
-    transition:             height 1000ms ease;
-        -moz-transition:    height 1000ms ease;
-        -ms-transition:     height 1000ms ease;
-        -o-transition:      height 1000ms ease;
-        -webkit-transition: height 1000ms ease;
+  height: 1rem;
+  transition:height 1000ms ease;
+  -moz-transition:height 1000ms ease;
+  -ms-transition:height 1000ms ease;
+  -o-transition:height 1000ms ease;
+  -webkit-transition:height 1000ms ease;
 }
 
 .banner {
