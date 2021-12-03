@@ -1,10 +1,10 @@
 # <h1>Noud van Dun</h1><br>
 My personal website is all about art and more......<br>
 
-![noudvandun](https://user-images.githubusercontent.com/38325801/144615169-f296c74b-b870-4c27-90f2-e2ca884e1a05.png)<br><br>
+![noudvandun](https://user-images.githubusercontent.com/38325801/144615693-69e867bc-2629-4708-b2ac-c9ba00c3000d.png)<br><br>
 
-![noudvandun1](https://user-images.githubusercontent.com/38325801/144615181-5ab5231c-ceff-4e24-ab39-7b738666d5b9.png)<br><br>
+![noudvandun1](https://user-images.githubusercontent.com/38325801/144615848-e6c194b9-668d-4d94-9684-3cd74dcbe7b3.png)<br><br>
 
-![iphoneXmockup](https://user-images.githubusercontent.com/38325801/119522120-03116c80-bd7c-11eb-9dd3-3df0d4a76011.png)<br><br>
+![iphoneXmockup](https://user-images.githubusercontent.com/38325801/144615713-34c35b83-ad06-474c-bf57-7ccfd72c0108.png)<br><br>
 
-![noudvandunfooter](https://user-images.githubusercontent.com/38325801/119522647-71562f00-bd7c-11eb-954d-22b25fcd7d16.png)
+![noudvandunfooter](https://user-images.githubusercontent.com/38325801/144615869-0ebafb8a-c233-4e92-a609-7d39671457c7.png)<br><br>
