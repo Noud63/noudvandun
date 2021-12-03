@@ -94,15 +94,13 @@
 <file name="patchworkdetail3big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132549347038467304" remote="132549349800000000" Dst="1" />
 <file name="patchworkfull.jpg" server="ftp.noudvandun.com/httpdocs/" local="132549336909111861" remote="132549349800000000" Dst="1" />
 <file name="patchworkfullsize.jpg" server="ftp.noudvandun.com/httpdocs/" local="132549336231903386" remote="132549349800000000" Dst="1" />
-<file name="thepresent.jpg" server="ftp.noudvandun.com/httpdocs/" local="132579500061763913" remote="132579546000000000" Dst="1" />
-<file name="thepresentdetail1.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580346290193079" remote="132580495200000000" Dst="1" />
-<file name="thepresentdetail1big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580346099142230" remote="132580495200000000" Dst="1" />
-<file name="thepresentdetail2.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580347926976071" remote="132580495200000000" Dst="1" />
-<file name="thepresentfull.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580343078760640" remote="132580495200000000" Dst="1" />
-<file name="thepresentdetail2big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580348131827705" remote="132580495200000000" Dst="1" />
-<file name="thepresentstage5full.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580395005640625" remote="132580495200000000" Dst="1" />
-<file name="thepresentstage5fullsize.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580394163402764" remote="132580495200000000" Dst="1" />
-<file name="thepresentfullsize.jpg" server="ftp.noudvandun.com/httpdocs/" local="132580341356202800" remote="132580495200000000" Dst="1" />
+<file name="thepresent.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail1.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail1big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail2.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentfull.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail2big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794661681" remote="132829209600000000" Dst="1" />
+<file name="thepresentfullsize.jpg" server="ftp.noudvandun.com/httpdocs/" local="132664237794817931" remote="132829209600000000" Dst="1" />
 <file name="panorama.jpg" server="ftp.noudvandun.com/httpdocs/" local="132582232638274741" remote="132582233400000000" Dst="1" />
 <file name="panoramadetail1.jpg" server="ftp.noudvandun.com/httpdocs/" local="132582048193346386" remote="132582069600000000" Dst="1" />
 <file name="panoramadetail1big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132582048386297349" remote="132582069600000000" Dst="1" />
@@ -123,4 +121,12 @@
 <file name="englishflag.png" server="ftp.noudvandun.com/httpdocs/" local="132584725758076001" remote="132584772600000000" Dst="1" />
 <file name="deadChrist.jpg" server="ftp.noudvandun.com/httpdocs/" local="132671817027923012" remote="132671890200000000" Dst="2" />
 <file name="deadChrist2.jpg" server="ftp.noudvandun.com/httpdocs/" local="132671789784738336" remote="132671890200000000" Dst="2" />
+<file name="ducktapebanana.jpg" server="ftp.noudvandun.com/httpdocs/" local="132828369878233276" remote="132829209000000000" Dst="1" />
+<file name="bananatext.jpg" server="ftp.noudvandun.com/httpdocs/" local="132829145582458268" remote="132829209000000000" Dst="1" />
+<file name="bananaeaten.jpg" server="ftp.noudvandun.com/httpdocs/" local="132828455266244686" remote="132829209600000000" Dst="1" />
+<file name="banana.jpg" server="ftp.noudvandun.com/httpdocs/" local="132829167036848542" remote="132829209600000000" Dst="1" />
+<file name="thepresentcontent.jpg" server="ftp.noudvandun.com/httpdocs/" local="132828360719977735" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail3.jpg" server="ftp.noudvandun.com/httpdocs/" local="132828410241395986" remote="132829209600000000" Dst="1" />
+<file name="thepresentdetail3big.jpg" server="ftp.noudvandun.com/httpdocs/" local="132828409873964743" remote="132829209600000000" Dst="1" />
+<file name="teotu3content.jpg" server="ftp.noudvandun.com/httpdocs/" local="132829320508160000" remote="132829326600000000" Dst="1" />
 </dwsync>

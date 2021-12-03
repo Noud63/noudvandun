@@ -220,16 +220,26 @@ body {
 
 .intro {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   max-width: 1200px;
   height: auto;
   margin-top: 4%;
 }
 
+.intro2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1200px;
+  height: auto;
+
+}
+
 @media only screen and (max-width: 850px) {
-  .intro {
+  .intro, .intro2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,9 +248,8 @@ body {
 }
 
 .definition {
-  width: 45%;
+  width: 50%;
   height: 100%;
-  padding: 3%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(14, 44, 90);
@@ -252,42 +261,48 @@ body {
   }
 }
 
+.def_1, .def_3 {
+  border-right: 1px solid rgb(5, 37, 126);
+  padding: 2%;
+
+}
+
+.def_3, .def_4 {
+  border-top: 1px solid rgb(5, 37, 126);
+}
+
+.def_2, .def_4 {
+  padding: 2%;
+}
+
+@media only screen and (max-width: 850px) {
+  .def_2, .def_4, .def_1, .def_3 {
+    border: none;
+  }
+}
 .disco {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8%;
+  width: 60%;
   height: auto;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 2%;
-}
-
-@media only screen and (max-width: 1000px) {
-  .disco {
-    margin-top: 3%;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .disco {
-    margin-top: 0%;
-  }
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
 .discoball {
-  width: 100%;
+  width: 12%;
   height: auto;
 }
 
 .arrow {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 3%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 }
 
 .downarrow {
@@ -454,7 +469,9 @@ body {
 .img-9,
 .img-10,
 .img-11,
-.img-12 {
+.img-12,
+.img-13,
+.img-14 {
   margin-top: 5%;
   width: 100%;
   height: auto;
@@ -546,6 +563,7 @@ body {
   font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (1920 - 320)));
   color: rgb(231, 231, 231);
 }
+
 
 /*---------------------------------------- PAINTINGS OVERLAY ----------------------------------------*/
 
@@ -738,7 +756,7 @@ body {
 }
 
 .size {
-  padding-top: 2%;
+  padding-top: 3%;
 }
 
 .title {
@@ -787,23 +805,26 @@ body {
 .thumb .detail {
   width: 100%;
   height: auto;
-  box-shadow: 0px 1px 2px rgb(92, 92, 92);
-  transition: box-shadow 0.5s;
+  box-shadow: 0px 1px 2px rgb(117, 117, 117);
+  transition: box-shadow 0.3s;
 }
 
 .thumb .detail:hover {
-  box-shadow: 0px 0px 12px rgb(63, 63, 63);
+  box-shadow: 0px 4px 8px rgb(146, 146, 146);
 }
 
 @media only screen and (max-width: 800px) {
  .thumb .detail:hover {
-    
     box-shadow: 0px 0px 7px rgb(92, 92, 92);
   }
 }
 
+.pic_mtg {
+margin-right: 0;
+}
+
 .pic {
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .caption {
@@ -839,16 +860,12 @@ body {
 }
 
 .wrapper {
-  background-image: url(images/stripbg2.jpg);
-  background-position: center;
-  background-size: cover;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   padding: 6%;
-  box-shadow: 0px 2px 4px gray;
 }
 
 .vidwrapper {
@@ -1212,7 +1229,7 @@ p {
 /*----------------------------------------- Magritte -------------------------------------------*/
 
 .magritte {
-  margin-top: 3%;
+  margin-top: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1233,9 +1250,11 @@ p {
   flex-direction: column;
   justify-content: space-between;
   padding-right: 5%;
-  background: #f1e2b9;
+  background-color: #f1e2b9; 
   padding: 2%;
   border-radius: 1rem;
+  box-shadow: 0px 2px 1px rgb(180, 180, 180);
+  border-right: 2px dotted #c9bda1;
 }
 
 @media only screen and (max-width: 930px) {
@@ -1298,6 +1317,7 @@ p {
   width: 100%;
   height: auto;
   border-radius: 5%;
+   box-shadow: 0px 2px 1px rgb(180, 180, 180);
 }
 
 .magrittepipe2 {
@@ -1436,4 +1456,88 @@ p {
   padding: .5em;
   opacity: 0;
   transition: opacity ease-in-out .5s;
+}
+
+/* Cattelan */
+
+.cattelan{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   background-image: linear-gradient(to top, rgb(145, 140, 135), rgb(177, 172, 166));
+   padding: 20px 0 20px 20px; 
+}
+
+.banana {
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(190, 188, 181);
+}
+
+.bananapic {
+  width: 100%;
+  height: auto;
+}
+
+.bananainfo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  right: 40px;
+  bottom: 20px;
+  line-height: 1.2;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(104, 104, 104);
+  }
+
+  @media only screen and (max-width: 800px) {
+  .bananainfo {
+   right: 20px;
+  bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bananainfo {
+   right: 10px;
+  bottom: 10px;
+  }
+}
+
+.bananaeaten {
+  width: 128px;
+  height: 144px;
+  box-shadow: 0px 2px 2px rgb(53, 53, 53);
+  padding: 10px;
+  background-image: linear-gradient(to top, rgb(134, 129, 124), rgb(187, 182, 177));
+  border-top: 1px solid white;
+}
+
+.cattelanTitle {
+  display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+   color: rgb(255, 255, 255);
+   width: 80%;
+   padding: 10px 20px 10px 20px; 
+} 
+
+.bananatext {
+  width: 100%;
+  height: auto;
+  background-color: rgb(158, 154, 149);
+  padding: 30px 30px 50px;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to top, rgb(145, 140, 135), rgb(177, 172, 166));
 }
