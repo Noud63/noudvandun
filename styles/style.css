@@ -77,7 +77,11 @@ body:before {
   height: 100%;
   z-index: -10;
   background:  url('../images/backgroundimg3.jpg') no-repeat center center;
-  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .container {
   max-width: 1200px;
