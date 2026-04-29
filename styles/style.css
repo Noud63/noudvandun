@@ -1512,7 +1512,8 @@ p {
 }
 
 .johncurrinimg {
-  width: 400px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.4);
 }
